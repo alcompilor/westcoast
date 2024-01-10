@@ -1,0 +1,95 @@
+@import "global";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $calmBlue;
+    color: #fff;
+    border-radius: 20px;
+    outline: 2px solid $calmBlue;
+    border: 2px solid #fff;
+
+    @include medium-to-large-screen {
+        height: 100px;
+        padding: 1rem 2.5rem;
+    }
+
+    @include small-screen {
+        height: max-content;
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        width: 240px;
+        height: auto;
+    }
+
+    nav > ul {
+        font-size: $s;
+        list-style: none;
+        display: flex;
+
+        @include medium-to-large-screen {
+            gap: 2rem;
+        }
+
+        @include small-screen {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        > li > a {
+            font-weight: 500;
+            padding: 0.3rem 0rem;
+
+            &:hover {
+                transition-duration: 0.1s;
+                border-bottom: 4px solid $accentDetail;
+            }
+        }
+
+        > li:last-child > a {
+            color: $calmBlue;
+            background-color: $accentDetail;
+            border-radius: 4px;
+            padding: 0.3rem 0.6rem;
+            border-bottom: 4px solid $accentDetail;
+        }
+    }
+
+    @include small-screen {
+        details {
+            summary {
+                display: grid;
+                position: relative;
+                grid-template-columns: 4fr 1fr;
+                align-items: center;
+                list-style: none;
+            }
+
+            summary::-webkit-details-marker {
+                display: none;
+            }
+
+            summary::after {
+                content: url("../assets/icons/menu.svg");
+                position: absolute;
+                font-size: $m;
+                justify-self: end;
+                top: 10px;
+            }
+        }
+
+        details[open] {
+            summary::after {
+                content: url("../assets/icons/close.svg");
+                font-size: $m;
+                justify-self: end;
+            }
+        }
+    }
+}
