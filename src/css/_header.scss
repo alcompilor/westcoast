@@ -33,7 +33,7 @@
         @include medium-to-large-screen {
             gap: 2rem;
         }
-        
+
         @include small-screen {
             margin-top: 1rem;
             margin-bottom: 1rem;
@@ -47,8 +47,8 @@
             padding: 0.3rem 0rem;
 
             &:hover {
-               transition-duration: .1s;
-               border-bottom: 4px solid $accentDetail;
+                transition-duration: 0.1s;
+                border-bottom: 4px solid $accentDetail;
             }
         }
 
@@ -70,7 +70,7 @@
                 align-items: center;
                 list-style: none;
             }
-            
+
             summary::-webkit-details-marker {
                 display: none;
             }
