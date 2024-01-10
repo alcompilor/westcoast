@@ -1,0 +1,111 @@
+/* GLOBAL VARIABLES */
+/* Fonts */
+$default-font: 'Ubuntu', sans-serif;
+
+/* Colors */
+$bg-color: #f6f8ff;
+$calmBlue: #173149;           // Calm and mature deep blue
+$secondaryGray: #6c757d;             // Neutral gray for backgrounds or secondary elements
+$growthGreen: #476c5e;               // Rich green conveying a sense of growth and stability
+$accentOrange: #d08445;              // Subtle orange for warmth and emphasis
+$softShadow: #6c757d5c; // Soft shadow with reduced opacity
+$accentDetail: #14d9d9;    // Accent detail color
+
+/* Font sizes */
+$logo-fsize: 3rem;
+$xl: 3.5rem;
+$l: 2.5rem;
+$m: 1.5rem;
+$s: 1rem;
+
+/** SCREEN MIXINS **/
+@mixin small-screen {
+    // Ideal for phones + tabs
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+    // Ideal for laptops (13 inches to 17 inches)
+    @media screen and (min-width: 768px) and (max-width: 1366px) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    // Ideal for monitors (20 inches+)
+    @media screen and (min-width: 1367px) {
+        @content;
+    }
+}
+
+@mixin medium-to-large-screen {
+    // Ideal for screens (13 inches+)
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+/* ------------------------------ */
+
+/* SIMPLE CSS RESET */
+/* Box-sizing border-box for all elements */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Remove margin and padding from all elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt, figure, figcaption, blockquote, pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $default-font;
+  background-color: $bg-color;
+  @include medium-to-large-screen {
+    margin: 2rem 3rem;
+  }
+  @include small-screen {
+    margin: 1.5rem 1.5rem;
+  }
+}
+
+/* Remove list styles (bullet points and numbers) */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default styles for anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default styles for form elements */
+button, input, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove default styles for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default styles for tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
