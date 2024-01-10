@@ -1,0 +1,211 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "courseTitle": "Introduction to Programming",
+            "courseCode": "CS101",
+            "durationInDays": 5,
+            "availability": {
+                "classroom": true,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/intro-to-programming.jpg",
+            "scheduledDate": "2024-03-15",
+            "bookingOptions": {
+                "classroom": true,
+                "online": true
+            },
+            "featured": true
+        },
+        {
+            "id": 2,
+            "courseTitle": "Web Development Basics",
+            "courseCode": "WD200",
+            "durationInDays": 7,
+            "availability": {
+                "classroom": true,
+                "online": false
+            },
+            "image": "http://localhost:8080/assets/img/web-dev-basics.jpg",
+            "scheduledDate": "2024-04-10",
+            "bookingOptions": {
+                "classroom": true,
+                "online": false
+            },
+            "featured": false
+        },
+        {
+            "id": 3,
+            "courseTitle": "Data Science Fundamentals",
+            "courseCode": "DS300",
+            "durationInDays": 10,
+            "availability": {
+                "classroom": false,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/data-science-fundamentals.jpg",
+            "scheduledDate": "2024-05-20",
+            "bookingOptions": {
+                "classroom": false,
+                "online": true
+            },
+            "featured": true
+        },
+        {
+            "id": 4,
+            "courseTitle": "Mobile App Development",
+            "courseCode": "MAD400",
+            "durationInDays": 8,
+            "availability": {
+                "classroom": true,
+                "online": false
+            },
+            "image": "http://localhost:8080/assets/img/mobile-app-dev.jpg",
+            "scheduledDate": "2024-06-05",
+            "bookingOptions": {
+                "classroom": true,
+                "online": false
+            },
+            "featured": false
+        },
+        {
+            "id": 5,
+            "courseTitle": "Cybersecurity Essentials",
+            "courseCode": "CE101",
+            "durationInDays": 6,
+            "availability": {
+                "classroom": true,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/cybersecurity-essentials.jpg",
+            "scheduledDate": "2024-07-12",
+            "bookingOptions": {
+                "classroom": true,
+                "online": true
+            },
+            "featured": false
+        },
+        {
+            "id": 6,
+            "courseTitle": "Artificial Intelligence Overview",
+            "courseCode": "AI200",
+            "durationInDays": 9,
+            "availability": {
+                "classroom": false,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/ai-overview.jpg",
+            "scheduledDate": "2024-08-18",
+            "bookingOptions": {
+                "classroom": false,
+                "online": true
+            },
+            "featured": true
+        },
+        {
+            "id": 7,
+            "courseTitle": "Database Management Systems",
+            "courseCode": "DBMS300",
+            "durationInDays": 7,
+            "availability": {
+                "classroom": true,
+                "online": false
+            },
+            "image": "http://localhost:8080/assets/img/dbms.jpg",
+            "scheduledDate": "2024-09-01",
+            "bookingOptions": {
+                "classroom": true,
+                "online": false
+            },
+            "featured": false
+        },
+        {
+            "id": 8,
+            "courseTitle": "Frontend Web Development",
+            "courseCode": "FWD400",
+            "durationInDays": 6,
+            "availability": {
+                "classroom": true,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/frontend-web-dev.jpg",
+            "scheduledDate": "2024-10-15",
+            "bookingOptions": {
+                "classroom": true,
+                "online": true
+            },
+            "featured": true
+        },
+        {
+            "id": 9,
+            "courseTitle": "Cloud Computing Basics",
+            "courseCode": "CCB200",
+            "durationInDays": 8,
+            "availability": {
+                "classroom": false,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/cloud-computing-basics.jpg",
+            "scheduledDate": "2024-11-05",
+            "bookingOptions": {
+                "classroom": false,
+                "online": true
+            },
+            "featured": false
+        },
+        {
+            "id": 10,
+            "courseTitle": "DevOps Practices",
+            "courseCode": "DOP300",
+            "durationInDays": 5,
+            "availability": {
+                "classroom": true,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/devops-practices.jpg",
+            "scheduledDate": "2024-12-20",
+            "bookingOptions": {
+                "classroom": true,
+                "online": true
+            },
+            "featured": true
+        },
+        {
+            "id": 11,
+            "courseTitle": "Advanced Machine Learning",
+            "courseCode": "AML450",
+            "durationInDays": 15,
+            "availability": {
+                "classroom": true,
+                "online": true
+            },
+            "image": "http://localhost:8080/assets/img/advanced-ml.jpg",
+            "scheduledDate": "2025-02-01",
+            "bookingOptions": {
+                "classroom": true,
+                "online": true
+            },
+            "featured": false
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "fullName": "John Doe",
+            "email": "john@gmail.com",
+            "password": "assumeHashed",
+            "address": "Example Street Address",
+            "phone": "0720000000",
+            "isAdmin": true
+        },
+        {
+            "id": "2",
+            "fullName": "Jane Doe",
+            "email": "jane@gmail.com",
+            "password": "assumeHashed",
+            "address": "Example Street Address",
+            "phone": "0720000000",
+            "isAdmin": false
+        }
+    ]
+}
