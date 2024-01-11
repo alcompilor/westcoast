@@ -4,12 +4,16 @@
             "id": 1,
             "courseTitle": "Introduction to Programming",
             "courseCode": "CS101",
+            "desc": "Build a solid foundation in programming and coding basics.",
             "durationInDays": 5,
             "availability": {
                 "classroom": true,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/intro-to-programming.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/intro-to-programming.jpg",
+                "desc": "Introduction to Programming Image"
+            },
             "scheduledDate": "2024-03-15",
             "bookingOptions": {
                 "classroom": true,
@@ -21,12 +25,16 @@
             "id": 2,
             "courseTitle": "Web Development Basics",
             "courseCode": "WD200",
+            "desc": "Explore essential concepts and fundamentals of web development.",
             "durationInDays": 7,
             "availability": {
                 "classroom": true,
                 "online": false
             },
-            "image": "http://localhost:8080/assets/img/web-dev-basics.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/web-dev-basics.jpg",
+                "desc": "Web Development Basics Image"
+            },
             "scheduledDate": "2024-04-10",
             "bookingOptions": {
                 "classroom": true,
@@ -38,12 +46,16 @@
             "id": 3,
             "courseTitle": "Data Science Fundamentals",
             "courseCode": "DS300",
+            "desc": "Gain a comprehensive understanding of the fundamentals of data science.",
             "durationInDays": 10,
             "availability": {
                 "classroom": false,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/data-science-fundamentals.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/data-science-fundamentals.jpg",
+                "desc": "Data Science Fundamentals Image"
+            },
             "scheduledDate": "2024-05-20",
             "bookingOptions": {
                 "classroom": false,
@@ -55,12 +67,16 @@
             "id": 4,
             "courseTitle": "Mobile App Development",
             "courseCode": "MAD400",
+            "desc": "Learn the essentials of mobile app development for various platforms.",
             "durationInDays": 8,
             "availability": {
                 "classroom": true,
                 "online": false
             },
-            "image": "http://localhost:8080/assets/img/mobile-app-dev.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/mobile-app-dev.jpg",
+                "desc": "Mobile App Development Image"
+            },
             "scheduledDate": "2024-06-05",
             "bookingOptions": {
                 "classroom": true,
@@ -72,12 +88,16 @@
             "id": 5,
             "courseTitle": "Cybersecurity Essentials",
             "courseCode": "CE101",
+            "desc": "Acquire essential knowledge and skills in the field of cybersecurity.",
             "durationInDays": 6,
             "availability": {
                 "classroom": true,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/cybersecurity-essentials.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/cybersecurity-essentials.jpg",
+                "desc": "Cybersecurity Essentials Image"
+            },
             "scheduledDate": "2024-07-12",
             "bookingOptions": {
                 "classroom": true,
@@ -89,12 +109,16 @@
             "id": 6,
             "courseTitle": "Artificial Intelligence Overview",
             "courseCode": "AI200",
+            "desc": "Get an insightful overview of key concepts in artificial intelligence.",
             "durationInDays": 9,
             "availability": {
                 "classroom": false,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/ai-overview.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/ai-overview.jpg",
+                "desc": "Artificial Intelligence Overview Image"
+            },
             "scheduledDate": "2024-08-18",
             "bookingOptions": {
                 "classroom": false,
@@ -106,12 +130,16 @@
             "id": 7,
             "courseTitle": "Database Management Systems",
             "courseCode": "DBMS300",
+            "desc": "Explore the principles and practices of database management systems.",
             "durationInDays": 7,
             "availability": {
                 "classroom": true,
                 "online": false
             },
-            "image": "http://localhost:8080/assets/img/dbms.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/dbms.jpg",
+                "desc": "Database Management Systems Image"
+            },
             "scheduledDate": "2024-09-01",
             "bookingOptions": {
                 "classroom": true,
@@ -123,12 +151,16 @@
             "id": 8,
             "courseTitle": "Frontend Web Development",
             "courseCode": "FWD400",
+            "desc": "Explore the essentials of frontend web development and design.",
             "durationInDays": 6,
             "availability": {
                 "classroom": true,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/frontend-web-dev.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/frontend-web-dev.jpg",
+                "desc": "Frontend Web Development Image"
+            },
             "scheduledDate": "2024-10-15",
             "bookingOptions": {
                 "classroom": true,
@@ -140,12 +172,16 @@
             "id": 9,
             "courseTitle": "Cloud Computing Basics",
             "courseCode": "CCB200",
+            "desc": "Get introduced to the fundamental concepts of cloud computing.",
             "durationInDays": 8,
             "availability": {
                 "classroom": false,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/cloud-computing-basics.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/cloud-computing-basics.jpg",
+                "desc": "Cloud Computing Basics Image"
+            },
             "scheduledDate": "2024-11-05",
             "bookingOptions": {
                 "classroom": false,
@@ -157,12 +193,16 @@
             "id": 10,
             "courseTitle": "DevOps Practices",
             "courseCode": "DOP300",
+            "desc": "Learn essential practices for effective DevOps implementation.",
             "durationInDays": 5,
             "availability": {
                 "classroom": true,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/devops-practices.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/devops-practices.jpg",
+                "desc": "DevOps Practices Image"
+            },
             "scheduledDate": "2024-12-20",
             "bookingOptions": {
                 "classroom": true,
@@ -174,12 +214,16 @@
             "id": 11,
             "courseTitle": "Advanced Machine Learning",
             "courseCode": "AML450",
+            "desc": "Deep dive into advanced machine learning techniques and algorithms.",
             "durationInDays": 15,
             "availability": {
                 "classroom": true,
                 "online": true
             },
-            "image": "http://localhost:8080/assets/img/advanced-ml.jpg",
+            "image": {
+                "url": "http://localhost:8080/assets/img/advanced-ml.jpg",
+                "desc": "Advanced Machine Learning Image"
+            },
             "scheduledDate": "2025-02-01",
             "bookingOptions": {
                 "classroom": true,
