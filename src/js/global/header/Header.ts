@@ -1,4 +1,5 @@
-import { pages } from "./pages.js";
+import { pages } from "./pages";
+import * as LogoutEvents from "./events/logout";
 
 const buildComponent = (): HTMLDivElement => {
     const headerContainer: HTMLDivElement = document.createElement("div");
@@ -9,12 +10,13 @@ const buildComponent = (): HTMLDivElement => {
     logo.alt = "WestCoast Logo Image";
     logo.className = "logo";
     [logo.width, logo.height] = [300, 80];
-    
+
     const navbar: HTMLElement = document.createElement("nav");
     const ul: HTMLUListElement = document.createElement("ul");
 
     pages.forEach((navLink) => {
         const li: HTMLLIElement = document.createElement("li");
+
         const a: HTMLAnchorElement = document.createElement("a");
         a.href = navLink.url;
         a.textContent = navLink.name;
@@ -22,10 +24,26 @@ const buildComponent = (): HTMLDivElement => {
         li.appendChild(a);
         ul.appendChild(li);
     });
-    
+
+    if (localStorage.getItem("wcUserId")) {
+        const li: HTMLLIElement = document.createElement("li");
+        const a: HTMLAnchorElement = document.createElement("a");
+
+        a.href = ".";
+        a.textContent = "Logout";
+        a.className = "logout-link";
+
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+
     navbar.append(ul);
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+        )
+    ) {
         const detailsEl: HTMLDetailsElement = document.createElement("details");
         const summaryEl: HTMLElement = document.createElement("summary");
 
@@ -38,10 +56,11 @@ const buildComponent = (): HTMLDivElement => {
     }
 
     return headerContainer;
-}
+};
 
 const render = (): void => {
     document.body.prepend(buildComponent());
-}
+    document.addEventListener("DOMContentLoaded", LogoutEvents.mount);
+};
 
 render();
