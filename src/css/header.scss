@@ -7,8 +7,6 @@
     background-color: $calmBlue;
     color: #fff;
     border-radius: 20px;
-    outline: 2px solid $calmBlue;
-    border: 2px solid #fff;
 
     @include medium-to-large-screen {
         height: 100px;
