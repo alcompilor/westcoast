@@ -1,8 +1,8 @@
-import Course from "../../interfaces/course";
-import * as API from "../../api/courses";
-import * as Catalog from "../../global/course/Catalog";
-import * as CourseEvents from "../../global/course/events/enroll";
-import * as CourseDetailsEvent from "../../global/course/events/showInfo";
+import Course from "../../../interfaces/course";
+import * as API from "../../../api/courses";
+import * as Catalog from "../../course/Catalog";
+import * as CourseEvents from "../../course/events/enroll";
+import * as CourseDetailsEvent from "../../course/events/showInfo";
 
 const mount = (): void => {
     const root: HTMLDivElement = document.querySelector(".root")!;
