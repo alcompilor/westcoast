@@ -5,6 +5,15 @@ const buildComponent = (data: Course): HTMLDivElement => {
     cardContainer.className = "card";
     cardContainer.dataset.id = data.id.toString();
 
+    const cardBefore: HTMLDivElement = document.createElement("div");
+    cardBefore.className = "card-before";
+
+    const cardExtra: HTMLDivElement = document.createElement("div");
+    cardExtra.classList.add("card-extra", "hidden");
+    const cardExtraParagraph: HTMLParagraphElement =
+        document.createElement("p");
+    cardExtraParagraph.textContent = data.details;
+
     const cardImg: HTMLImageElement = document.createElement("img");
     [cardImg.src, cardImg.alt] = [data.image.url, data.image.desc];
     cardImg.className = "card-img";
@@ -73,6 +82,8 @@ const buildComponent = (data: Course): HTMLDivElement => {
         cardBtnContainer.append(cardOnSiteBtn);
     }
 
+    cardExtra.appendChild(cardExtraParagraph);
+
     cardDetails.append(
         cardImg,
         cardTags,
@@ -82,7 +93,7 @@ const buildComponent = (data: Course): HTMLDivElement => {
         cardPlace,
         cardBtnContainer
     );
-    cardContainer.append(cardImg, cardDetails);
+    cardContainer.append(cardBefore, cardExtra, cardImg, cardDetails);
 
     return cardContainer;
 };
