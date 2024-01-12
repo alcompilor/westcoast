@@ -155,8 +155,7 @@ table {
 /* CARDS CATALOGE STYLESHEET */
 .hidden {
     opacity: 0;
-    overflow-y: hidden!important;
-    overflow-x: hidden!important;
+    visibility: hidden;
 }
 
 .close-info {
