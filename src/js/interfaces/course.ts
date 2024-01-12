@@ -3,6 +3,7 @@ interface Course {
     courseTitle: string;
     courseCode: string;
     desc: string;
+    details: string;
     durationInDays: Number;
     availability: {
         classroom: boolean;
