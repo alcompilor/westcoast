@@ -7,6 +7,6 @@ const reqCourses = async (): Promise<Course[]> => {
     }
     const data = await res.json();
     return data;
-}
+};
 
 export { reqCourses };
