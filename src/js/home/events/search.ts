@@ -2,6 +2,7 @@ import Course from "../../interfaces/course";
 import * as API from "../../api/courses";
 import * as Catalog from "../../global/course/Catalog";
 import * as CourseEvents from "../../global/course/events/enroll";
+import * as CourseDetailsEvent from "../../global/course/events/showInfo";
 
 const mount = (): void => {
     const root: HTMLDivElement = document.querySelector(".root")!;
@@ -64,6 +65,7 @@ const mount = (): void => {
         clearResults();
         await searchHandler();
         CourseEvents.mount();
+        CourseDetailsEvent.mount();
         scrollEffect();
     });
 };
