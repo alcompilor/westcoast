@@ -10,10 +10,10 @@ const buildComponent = (data: Course): HTMLDivElement => {
 
     const cardExtra: HTMLDivElement = document.createElement("div");
     cardExtra.classList.add("card-extra", "hidden");
-    
+
     const cardExtraParagraph: HTMLParagraphElement =
         document.createElement("p");
-    const parsedParahraph: string = data.details.replace(/\n/g, '\n');
+    const parsedParahraph: string = data.details.replace(/\n/g, "\n");
     cardExtraParagraph.textContent = parsedParahraph;
 
     const cardImg: HTMLImageElement = document.createElement("img");

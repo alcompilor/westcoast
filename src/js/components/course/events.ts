@@ -1,5 +1,4 @@
 const mount = (): void => {
-    
     const enrollEvent = ((): void => {
         const cardOnlineBtns: NodeListOf<HTMLButtonElement> =
             document.querySelectorAll(".card-btn-online");

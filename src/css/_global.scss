@@ -159,7 +159,7 @@ table {
 }
 
 .close-info {
-    background: url("/assets/icons/close-info.svg") no-repeat!important;
+    background: url("/assets/icons/close-info.svg") no-repeat !important;
 }
 
 .cards-container {
@@ -242,10 +242,10 @@ table {
                 overflow: scroll;
                 overflow-x: hidden;
                 transition-duration: 0.3s;
-                
+
                 &::-webkit-scrollbar {
                     width: 6px;
-                    height: 10px!important;
+                    height: 10px !important;
                 }
 
                 &::-webkit-scrollbar-track {
@@ -256,8 +256,8 @@ table {
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    background-color: $accentDetail;    /* color of the scroll thumb */
-                    border-radius: 20px;       /* roundness of the scroll thumb */
+                    background-color: $accentDetail; /* color of the scroll thumb */
+                    border-radius: 20px; /* roundness of the scroll thumb */
                     width: 2px;
                 }
 
