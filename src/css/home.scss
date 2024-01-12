@@ -1,0 +1,116 @@
+@import "./global";
+
+.hero-container {
+    background: linear-gradient(15deg, #112232, #294a62);
+    color: #fff;
+    border-radius: 22px;
+
+    @include medium-to-large-screen {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        padding: 2rem 5rem;
+    }
+
+    @include small-screen {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .hero-left {
+        display: flex;
+        flex-direction: column;
+
+        @include medium-to-large-screen {
+            justify-content: center;
+            gap: 4rem;
+        }
+
+        @include small-screen {
+            gap: 2rem;
+        }
+
+        .hero-title {
+            max-width: 20ch;
+            line-height: 1.4;
+
+            @include medium-to-large-screen {
+                border-bottom: 10px solid $accentOrange;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 5px;
+                padding: 0.8rem 0rem;
+            }
+
+            @include large-screen {
+                font-size: $l;
+            }
+
+            @include medium-screen {
+                font-size: calc($m + 0.4rem);
+            }
+
+            @include small-screen {
+                font-size: calc($m - 0.3rem);
+                border-bottom: 5px solid $accentOrange;
+                padding: 0.5rem 0rem;
+                border-bottom-left-radius: 13px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+
+        .search-container {
+            width: fit-content;
+            overflow: hidden;
+            border-radius: 8px;
+            transition-duration: 0.2s;
+
+            @include medium-to-large-screen {
+                box-shadow: 20px -20px 0px 2px rgb(0 172 172 / 13%);
+
+                &:focus-within {
+                    box-shadow: none;
+                    transform: scale(0.99);
+                    transition-duration: 0.2s;
+                }
+            }
+
+            .search-input {
+                background-color: $accentDetail;
+                color: $calmBlue;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 8px;
+                padding: 0.4rem 1rem;
+                font-weight: 800;
+
+                @include medium-to-large-screen {
+                    font-size: $m;
+                }
+
+                @include small-screen {
+                    font-size: $s;
+                }
+
+                &::placeholder {
+                    color: $calmBlue;
+                }
+            }
+        }
+    }
+
+    .hero-img {
+        width: 85%;
+        height: auto;
+
+        @include medium-to-large-screen {
+            justify-self: center;
+        }
+
+        @include small-screen {
+            align-self: center;
+            order: -1;
+        }
+    }
+}
