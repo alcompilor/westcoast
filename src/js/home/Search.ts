@@ -8,6 +8,6 @@ const buildComponent = (): HTMLDivElement => {
 
     searchContainer.append(searchInput);
     return searchContainer;
-}
+};
 
 export { buildComponent };
