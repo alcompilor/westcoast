@@ -9,7 +9,7 @@ const buildComponent = (data: Course[], title: string): HTMLDivElement => {
     catalogEl.className = "cards";
 
     const catalogTitle: HTMLHeadElement = document.createElement("h2");
-    catalogTitle.className = "cards-container-title"
+    catalogTitle.className = "cards-container-title";
     catalogTitle.textContent = title;
 
     const nodesList: Node[] = [];
@@ -21,6 +21,6 @@ const buildComponent = (data: Course[], title: string): HTMLDivElement => {
     catalogEl.append(...nodesList);
     catalogContainer.append(catalogTitle, catalogEl);
     return catalogContainer;
-}
+};
 
 export { buildComponent };
