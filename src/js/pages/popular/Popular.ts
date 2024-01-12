@@ -1,6 +1,6 @@
 import Course from "../../interfaces/course";
-import * as Catalog from "../../components/course/catalog/CourseCatalog";
-import * as API from "../../api/courses";
+import * as CourseCatalog from "../../components/course/catalog/CourseCatalog";
+import * as CourseAPI from "../../api/courses";
 import * as CourseEvents from "../../components/course/events";
 
 const filterPopular = (data: Course[]): Course[] => {
@@ -11,10 +11,10 @@ const filterPopular = (data: Course[]): Course[] => {
 const render = async (): Promise<void> => {
     const root: HTMLDivElement = document.querySelector(".root")!;
 
-    const allCourses: Course[] = await API.reqCourses();
+    const allCourses: Course[] = await CourseAPI.reqCourses();
     const filteredCourses: Course[] = filterPopular(allCourses);
 
-    const catalogSection: HTMLDivElement = Catalog.buildComponent(
+    const catalogSection: HTMLDivElement = CourseCatalog.buildComponent(
         filteredCourses,
         "Popular Courses"
     );
