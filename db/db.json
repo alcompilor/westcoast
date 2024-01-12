@@ -11,7 +11,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/intro-to-programming.jpg",
+                "url": "http://localhost:8080/assets/img/intro-to-programming.svg",
                 "desc": "Introduction to Programming Image"
             },
             "scheduledDate": "2024-03-15",
@@ -32,7 +32,7 @@
                 "online": false
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/web-dev-basics.jpg",
+                "url": "http://localhost:8080/assets/img/web-dev-basics.svg",
                 "desc": "Web Development Basics Image"
             },
             "scheduledDate": "2024-04-10",
@@ -53,7 +53,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/data-science-fundamentals.jpg",
+                "url": "http://localhost:8080/assets/img/data-science-fundamentals.svg",
                 "desc": "Data Science Fundamentals Image"
             },
             "scheduledDate": "2024-05-20",
@@ -74,7 +74,7 @@
                 "online": false
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/mobile-app-dev.jpg",
+                "url": "http://localhost:8080/assets/img/mobile-app-dev.svg",
                 "desc": "Mobile App Development Image"
             },
             "scheduledDate": "2024-06-05",
@@ -95,7 +95,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/cybersecurity-essentials.jpg",
+                "url": "http://localhost:8080/assets/img/cybersecurity-essentials.svg",
                 "desc": "Cybersecurity Essentials Image"
             },
             "scheduledDate": "2024-07-12",
@@ -116,7 +116,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/ai-overview.jpg",
+                "url": "http://localhost:8080/assets/img/ai-overview.svg",
                 "desc": "Artificial Intelligence Overview Image"
             },
             "scheduledDate": "2024-08-18",
@@ -137,7 +137,7 @@
                 "online": false
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/dbms.jpg",
+                "url": "http://localhost:8080/assets/img/dbms.svg",
                 "desc": "Database Management Systems Image"
             },
             "scheduledDate": "2024-09-01",
@@ -158,7 +158,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/frontend-web-dev.jpg",
+                "url": "http://localhost:8080/assets/img/frontend-web-dev.svg",
                 "desc": "Frontend Web Development Image"
             },
             "scheduledDate": "2024-10-15",
@@ -179,7 +179,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/cloud-computing-basics.jpg",
+                "url": "http://localhost:8080/assets/img/cloud-computing-basics.svg",
                 "desc": "Cloud Computing Basics Image"
             },
             "scheduledDate": "2024-11-05",
@@ -200,7 +200,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/devops-practices.jpg",
+                "url": "http://localhost:8080/assets/img/devops-practices.svg",
                 "desc": "DevOps Practices Image"
             },
             "scheduledDate": "2024-12-20",
@@ -221,10 +221,31 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/advanced-ml.jpg",
+                "url": "http://localhost:8080/assets/img/advanced-ml.svg",
                 "desc": "Advanced Machine Learning Image"
             },
             "scheduledDate": "2025-02-01",
+            "bookingOptions": {
+                "classroom": true,
+                "online": true
+            },
+            "featured": false
+        },
+        {
+            "id": 12,
+            "courseTitle": "Backend Web Development",
+            "courseCode": "BWD600",
+            "desc": "Explore advanced concepts and techniques in backend development.",
+            "durationInDays": 20,
+            "availability": {
+                "classroom": true,
+                "online": true
+            },
+            "image": {
+                "url": "http://localhost:8080/assets/img/backend-web-dev.svg",
+                "desc": "Advanced Backend Development Image"
+            },
+            "scheduledDate": "2025-03-15",
             "bookingOptions": {
                 "classroom": true,
                 "online": true
