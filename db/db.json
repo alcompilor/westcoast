@@ -20,7 +20,7 @@
                 "online": true
             },
             "featured": true,
-            "details": "This comprehensive 5-day course is designed for beginners looking to build a solid foundation in programming and coding basics. Covering key concepts such as variables, control structures, and functions, participants will gain practical hands-on experience through coding exercises. Both classroom and online options are available for greater flexibility. Join us on March 15, 2024, for an immersive learning experience."
+            "details": "This comprehensive 5-day course is designed for beginners looking to build a solid foundation in programming and coding basics.\n\nCovering key concepts such as variables, control structures, and functions, participants will gain practical hands-on experience through coding exercises. Both classroom and online options are available for greater flexibility.\n\nJoin us on March 15, 2024, for an immersive learning experience."
         },
         {
             "id": 2,
@@ -42,7 +42,7 @@
                 "online": false
             },
             "featured": false,
-            "details": "Dive into the dynamic world of web development with our 7-day course. Covering essential concepts and fundamentals, participants will gain hands-on experience in building responsive and user-friendly websites. While the classroom option offers interactive sessions, the online option provides flexibility for remote learners. The course is scheduled to start on April 10, 2024. Join us to embark on your web development journey."
+            "details": "Dive into the dynamic world of web development with our 7-day course.\n\nCovering essential concepts and fundamentals, participants will gain hands-on experience in building responsive and user-friendly websites. While the classroom option offers interactive sessions, the online option provides flexibility for remote learners.\n\nThe course is scheduled to start on April 10, 2024. Join us to embark on your web development journey."
         },
         {
             "id": 3,
@@ -64,7 +64,7 @@
                 "online": true
             },
             "featured": true,
-            "details": "Embark on a 10-day journey into the world of data science. This course provides a comprehensive understanding of the fundamental concepts and techniques used in the field. Whether you choose the online option for flexibility or prefer the in-person experience, you'll delve into topics such as data analysis, machine learning, and statistical modeling. The course begins on May 20, 2024. Secure your spot for an enriching learning experience."
+            "details": "Embark on a 10-day journey into the world of data science.\n\nThis course provides a comprehensive understanding of the fundamental concepts and techniques used in the field. Whether you choose the online option for flexibility or prefer the in-person experience, you'll delve into topics such as data analysis, machine learning, and statistical modeling.\n\nThe course begins on May 20, 2024. Secure your spot for an enriching learning experience."
         },
         {
             "id": 4,
@@ -86,7 +86,7 @@
                 "online": false
             },
             "featured": false,
-            "details": "Explore the dynamic field of mobile app development in this 8-day course. Participants will learn the essentials of building mobile applications for various platforms, covering topics such as user interface design, application architecture, and deployment strategies. Choose the classroom option for in-person guidance or the online option for flexibility. The course starts on June 5, 2024. Join us to kickstart your journey into mobile app development."
+            "details": "Explore the dynamic field of mobile app development in this 8-day course.\n\nParticipants will learn the essentials of building mobile applications for various platforms, covering topics such as user interface design, application architecture, and deployment strategies. Choose the classroom option for in-person guidance or the online option for flexibility.\n\nThe course starts on June 5, 2024. Join us to kickstart your journey into mobile app development."
         },
         {
             "id": 5,
@@ -108,7 +108,7 @@
                 "online": true
             },
             "featured": false,
-            "details": "Ensure your online presence is secure with our 6-day course on cybersecurity essentials. Participants will acquire essential knowledge and skills to protect systems, networks, and data from cyber threats. The course, available both in the classroom and online, covers topics such as encryption, network security, and ethical hacking. Join us starting July 12, 2024, to enhance your expertise in cybersecurity."
+            "details": "Ensure your online presence is secure with our 6-day course on cybersecurity essentials.\n\nParticipants will acquire essential knowledge and skills to protect systems, networks, and data from cyber threats. The course, available both in the classroom and online, covers topics such as encryption, network security, and ethical hacking.\n\nJoin us starting July 12, 2024, to enhance your expertise in cybersecurity."
         },
         {
             "id": 6,
@@ -130,7 +130,7 @@
                 "online": true
             },
             "featured": true,
-            "details": "Embark on a 9-day journey into the fascinating world of artificial intelligence. This course provides an insightful overview of key concepts, techniques, and applications in AI. Participants will explore topics such as machine learning, natural language processing, and computer vision. The online option offers flexibility for remote learners. Join us on August 18, 2024, for an enriching introduction to artificial intelligence."
+            "details": "Embark on a 9-day journey into the fascinating world of artificial intelligence.\n\nThis course provides an insightful overview of key concepts, techniques, and applications in AI. Participants will explore topics such as machine learning, natural language processing, and computer vision. The online option offers flexibility for remote learners.\n\nJoin us on August 18, 2024, for an enriching introduction to artificial intelligence."
         },
         {
             "id": 7,
@@ -152,7 +152,7 @@
                 "online": false
             },
             "featured": false,
-            "details": "Delve into the world of database management systems with our 7-day course. Participants will explore the principles and practices of designing, implementing, and managing databases. The classroom option provides an interactive learning environment, while the online option caters to those seeking flexibility. The course kicks off on September 1, 2024. Join us to master the intricacies of database management."
+            "details": "Delve into the world of database management systems with our 7-day course.\n\nParticipants will explore the principles and practices of designing, implementing, and managing databases. The classroom option provides an interactive learning environment, while the online option caters to those seeking flexibility.\n\nThe course kicks off on September 1, 2024. Join us to master the intricacies of database management."
         },
         {
             "id": 8,
@@ -174,7 +174,7 @@
                 "online": true
             },
             "featured": true,
-            "details": "Immerse yourself in the world of frontend web development with our 6-day course. Covering essential concepts and techniques, participants will gain hands-on experience in creating visually appealing and interactive websites. Whether you choose the classroom or online option, you'll delve into topics such as HTML, CSS, and JavaScript. The course begins on October 15, 2024. Join us to enhance your skills in frontend development."
+            "details": "Immerse yourself in the world of frontend web development with our 6-day course.\n\nCovering essential concepts and techniques, participants will gain hands-on experience in creating visually appealing and interactive websites. Whether you choose the classroom or online option, you'll delve into topics such as HTML, CSS, and JavaScript.\n\nThe course begins on October 15, 2024. Join us to enhance your skills in frontend development."
         },
         {
             "id": 9,
@@ -196,7 +196,7 @@
                 "online": true
             },
             "featured": false,
-            "details": "Embark on an 8-day journey to discover the fundamental concepts of cloud computing. This course provides an introduction to cloud services, deployment models, and key technologies. The online option offers flexibility for remote learners. The course is scheduled to start on November 5, 2024. Join us to lay the foundation for your understanding of cloud computing."
+            "details": "Embark on an 8-day journey to discover the fundamental concepts of cloud computing.\n\nThis course provides an introduction to cloud services, deployment models, and key technologies. The online option offers flexibility for remote learners.\n\nThe course is scheduled to start on November 5, 2024. Join us to lay the foundation for your understanding of cloud computing."
         },
         {
             "id": 10,
@@ -218,7 +218,7 @@
                 "online": true
             },
             "featured": true,
-            "details": "Discover the key practices for effective DevOps implementation in this 5-day course. Participants will learn how to streamline development and operations processes, ensuring faster and more reliable software delivery. Both classroom and online options are available for flexibility. Join us on December 20, 2024, to enhance your expertise in DevOps practices."
+            "details": "Discover the key practices for effective DevOps implementation in this 5-day course.\n\nParticipants will learn how to streamline development and operations processes, ensuring faster and more reliable software delivery. Both classroom and online options are available for flexibility.\n\nJoin us on December 20, 2024, to enhance your expertise in DevOps practices."
         },
         {
             "id": 11,
@@ -240,7 +240,7 @@
                 "online": true
             },
             "featured": false,
-            "details": "Take a deep dive into the world of advanced machine learning with our 15-day course. Participants will explore advanced techniques and algorithms used in the field, covering topics such as deep learning, neural networks, and reinforcement learning. Both classroom and online options are available for greater flexibility. The course starts on February 1, 2025. Join us to elevate your skills in machine learning."
+            "details": "Take a deep dive into the world of advanced machine learning with our 15-day course.\n\nParticipants will explore advanced techniques and algorithms used in the field, covering topics such as deep learning, neural networks, and reinforcement learning. Both classroom and online options are available for greater flexibility.\n\nThe course starts on February 1, 2025. Join us to elevate your skills in machine learning."
         },
         {
             "id": 12,
@@ -262,7 +262,7 @@
                 "online": true
             },
             "featured": false,
-            "details": "Embark on a 20-day journey to explore advanced concepts and techniques in backend web development. This course covers topics such as server-side scripting, databases, and API design. Whether you choose the classroom or online option, you'll gain practical experience in building scalable and robust backend systems. The course begins on March 15, 2025. Join us to master the intricacies of backend development."
+            "details": "Embark on a 20-day journey to explore advanced concepts and techniques in backend web development.\n\nThis course covers topics such as server-side scripting, databases, and API design. Whether you choose the classroom or online option, you'll gain practical experience in building scalable and robust backend systems.\n\nThe course begins on March 15, 2025. Join us to master the intricacies of backend development."
         }
     ],
     "users": [
