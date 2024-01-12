@@ -11,7 +11,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/intro-to-programming.svg",
+                "url": "/assets/img/intro-to-programming.svg",
                 "desc": "Introduction to Programming Image"
             },
             "scheduledDate": "2024-03-15",
@@ -33,7 +33,7 @@
                 "online": false
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/web-dev-basics.svg",
+                "url": "/assets/img/web-dev-basics.svg",
                 "desc": "Web Development Basics Image"
             },
             "scheduledDate": "2024-04-10",
@@ -55,7 +55,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/data-science-fundamentals.svg",
+                "url": "/assets/img/data-science-fundamentals.svg",
                 "desc": "Data Science Fundamentals Image"
             },
             "scheduledDate": "2024-05-20",
@@ -77,7 +77,7 @@
                 "online": false
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/mobile-app-dev.svg",
+                "url": "/assets/img/mobile-app-dev.svg",
                 "desc": "Mobile App Development Image"
             },
             "scheduledDate": "2024-06-05",
@@ -99,7 +99,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/cybersecurity-essentials.svg",
+                "url": "/assets/img/cybersecurity-essentials.svg",
                 "desc": "Cybersecurity Essentials Image"
             },
             "scheduledDate": "2024-07-12",
@@ -121,7 +121,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/ai-overview.svg",
+                "url": "/assets/img/ai-overview.svg",
                 "desc": "Artificial Intelligence Overview Image"
             },
             "scheduledDate": "2024-08-18",
@@ -143,7 +143,7 @@
                 "online": false
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/dbms.svg",
+                "url": "/assets/img/dbms.svg",
                 "desc": "Database Management Systems Image"
             },
             "scheduledDate": "2024-09-01",
@@ -165,7 +165,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/frontend-web-dev.svg",
+                "url": "/assets/img/frontend-web-dev.svg",
                 "desc": "Frontend Web Development Image"
             },
             "scheduledDate": "2024-10-15",
@@ -187,7 +187,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/cloud-computing-basics.svg",
+                "url": "/assets/img/cloud-computing-basics.svg",
                 "desc": "Cloud Computing Basics Image"
             },
             "scheduledDate": "2024-11-05",
@@ -209,7 +209,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/devops-practices.svg",
+                "url": "/assets/img/devops-practices.svg",
                 "desc": "DevOps Practices Image"
             },
             "scheduledDate": "2024-12-20",
@@ -231,7 +231,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/advanced-ml.svg",
+                "url": "/assets/img/advanced-ml.svg",
                 "desc": "Advanced Machine Learning Image"
             },
             "scheduledDate": "2025-02-01",
@@ -253,7 +253,7 @@
                 "online": true
             },
             "image": {
-                "url": "http://localhost:8080/assets/img/backend-web-dev.svg",
+                "url": "/assets/img/backend-web-dev.svg",
                 "desc": "Advanced Backend Development Image"
             },
             "scheduledDate": "2025-03-15",
