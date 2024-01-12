@@ -238,7 +238,7 @@ table {
                 padding: 2.5rem 3rem;
                 font-size: $s;
                 text-align: left;
-                line-height: 1.8;
+                line-height: 1.6;
                 overflow: scroll;
                 overflow-x: hidden;
                 transition-duration: 0.3s;
@@ -259,6 +259,12 @@ table {
                     background-color: $accentDetail;    /* color of the scroll thumb */
                     border-radius: 20px;       /* roundness of the scroll thumb */
                     width: 2px;
+                }
+
+                > p {
+                    white-space: pre-line;
+                    hyphens: auto;
+                    text-align: justify;
                 }
             }
 
