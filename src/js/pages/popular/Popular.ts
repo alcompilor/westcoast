@@ -1,8 +1,7 @@
 import Course from "../../interfaces/course";
-import * as Catalog from "../course/Catalog";
+import * as Catalog from "../../components/course/catalog/CourseCatalog";
 import * as API from "../../api/courses";
-import * as CourseEnrollEvent from "../course/events/enroll";
-import * as CourseDetailsEvent from "../course/events/showInfo";
+import * as CourseEvents from "../../components/course/events";
 
 const filterPopular = (data: Course[]): Course[] => {
     const filtered: Course[] = data.filter((course) => course.featured);
@@ -23,6 +22,5 @@ const render = async (): Promise<void> => {
 };
 
 render().finally(() => {
-    CourseEnrollEvent.mount();
-    CourseDetailsEvent.mount();
+    CourseEvents.mount();
 });

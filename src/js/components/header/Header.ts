@@ -1,5 +1,5 @@
 import { pages } from "./pages";
-import * as LogoutEvents from "./events/logout";
+import * as HeaderEvents from "./events";
 
 const buildComponent = (): HTMLDivElement => {
     const headerContainer: HTMLDivElement = document.createElement("div");
@@ -60,7 +60,7 @@ const buildComponent = (): HTMLDivElement => {
 
 const render = (): void => {
     document.body.prepend(buildComponent());
-    document.addEventListener("DOMContentLoaded", LogoutEvents.mount);
+    document.addEventListener("DOMContentLoaded", HeaderEvents.mount);
 };
 
 render();

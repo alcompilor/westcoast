@@ -1,5 +1,5 @@
-import Course from "../../interfaces/course";
-import * as CourseCard from "./CourseCard";
+import Course from "../../../interfaces/course";
+import * as CourseCard from "../card/CourseCard";
 
 const buildComponent = (data: Course[], title: string): HTMLDivElement => {
     const catalogContainer: HTMLDivElement = document.createElement("div");

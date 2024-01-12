@@ -1,4 +1,4 @@
-import Course from "../../interfaces/course";
+import Course from "../../../interfaces/course";
 
 const buildComponent = (data: Course): HTMLDivElement => {
     const cardContainer: HTMLDivElement = document.createElement("div");

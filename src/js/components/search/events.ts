@@ -1,8 +1,7 @@
-import Course from "../../../interfaces/course";
-import * as API from "../../../api/courses";
-import * as Catalog from "../../course/Catalog";
-import * as CourseEvents from "../../course/events/enroll";
-import * as CourseDetailsEvent from "../../course/events/showInfo";
+import Course from "../../interfaces/course";
+import * as CourseAPI from "../../api/courses";
+import * as CourseCatalog from "../course/catalog/CourseCatalog";
+import * as CourseEvents from "../course/events";
 
 const mount = (): void => {
     const root: HTMLDivElement = document.querySelector(".root")!;
@@ -43,7 +42,7 @@ const mount = (): void => {
     };
 
     const searchHandler = async (): Promise<void> => {
-        const data = await API.reqCourses();
+        const data = await CourseAPI.reqCourses();
         const listOfCourses = [...performSearch(data)];
 
         let title: string;
@@ -52,7 +51,7 @@ const mount = (): void => {
         } else {
             title = "No Results Found :(";
         }
-        const catalogSection: HTMLDivElement = Catalog.buildComponent(
+        const catalogSection: HTMLDivElement = CourseCatalog.buildComponent(
             listOfCourses,
             title
         );
@@ -65,7 +64,6 @@ const mount = (): void => {
         clearResults();
         await searchHandler();
         CourseEvents.mount();
-        CourseDetailsEvent.mount();
         scrollEffect();
     });
 };
