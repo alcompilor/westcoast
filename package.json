@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
+        "format": "prettier --write src --tab-width 4 --single-quote false --trailing-comma es5",
         "build": "npm install && npx snowpack build",
         "mountDB": "json-server ./db/db.json",
         "initServer": "live-server ./dist",

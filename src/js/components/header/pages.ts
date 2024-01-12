@@ -1,17 +1,17 @@
 const pages: NavLinks[] = [
     {
         name: "Home",
-        url: "./index.html"
+        url: "./index.html",
     },
-        {
+    {
         name: "Popular Courses",
-        url: "./popular.html"
+        url: "./popular.html",
     },
     {
         name: "My Account",
-        url: "./account.html"
+        url: "./account.html",
     },
-]
+];
 
 interface NavLinks {
     name: string;

@@ -1,4 +1,4 @@
-import * as Search from "./Search";
+import * as Search from "../search/Search";
 
 const buildComponent = () => {
     const heroContainer: HTMLDivElement = document.createElement("div");
