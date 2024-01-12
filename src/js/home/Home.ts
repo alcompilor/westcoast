@@ -2,7 +2,8 @@ import * as Hero from "./Hero";
 import * as Catalog from "../global/course/Catalog";
 import * as API from "../api/courses";
 import * as SearchEvents from "./events/search";
-import * as CourseEvents from "../global/course/events/enroll";
+import * as CourseEnrollEvent from "../global/course/events/enroll";
+import * as CourseDetailsEvent from "../global/course/events/showInfo";
 
 const render = async (): Promise<void> => {
     const root = document.querySelector(".root");
@@ -17,5 +18,6 @@ const render = async (): Promise<void> => {
 
 render().finally(() => {
     SearchEvents.mount();
-    CourseEvents.mount();
+    CourseEnrollEvent.mount();
+    CourseDetailsEvent.mount();
 });
