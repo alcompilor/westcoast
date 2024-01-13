@@ -20,7 +20,6 @@
     .econfirm-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
 
         .econfirm-title {
             color: $calmBlue;
@@ -32,6 +31,7 @@
 
             @include small-screen {
                 font-size: $m;
+                align-items: center;
                 text-align: center;
             }
         }
