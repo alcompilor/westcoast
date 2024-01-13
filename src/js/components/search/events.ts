@@ -20,22 +20,20 @@ const mount = (): void => {
         cardsContainer.scrollIntoView({ behavior: "smooth" });
     };
 
-    const performSearch = (data: Course[]): Set<Course> => {
+    const performSearch = (data: Course[]): Course[] => {
         const query: string = searchInput?.value.trim().toLowerCase();
-        const results: Set<Course> = new Set();
 
-        data.forEach((course) => {
+        const results: Course[] = data.filter((course) => {
             for (const key in course) {
+                const value = course[key];
                 if (
-                    typeof course[key] === "string" ||
-                    typeof course[key] === "number"
+                    typeof value === "string" &&
+                    value.toLowerCase().includes(query)
                 ) {
-                    const val: string = String(
-                        course[key] as string
-                    ).toLowerCase();
-                    val.includes(query) && results.add(course);
+                    return true;
                 }
             }
+            return false;
         });
 
         return results;
@@ -49,7 +47,7 @@ const mount = (): void => {
         if (listOfCourses.length > 0) {
             title = "Search Results:";
         } else {
-            title = "No Results Found :(";
+            title = "No courses found 👀";
         }
         const catalogSection: HTMLDivElement = CourseCatalog.buildComponent(
             listOfCourses,
