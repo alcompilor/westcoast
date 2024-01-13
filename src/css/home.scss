@@ -34,6 +34,7 @@
         .hero-title {
             max-width: 20ch;
             line-height: 1.4;
+            filter: brightness(1.3);
 
             @include medium-to-large-screen {
                 border-bottom: 10px solid $accentOrange;
