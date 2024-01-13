@@ -273,7 +273,8 @@
             "password": "assumeHashed",
             "address": "Example Street Address",
             "phone": "0720000000",
-            "isAdmin": true
+            "isAdmin": true,
+            "courses": []
         },
         {
             "id": "2",
@@ -282,7 +283,8 @@
             "password": "assumeHashed",
             "address": "Example Street Address",
             "phone": "0720000000",
-            "isAdmin": false
+            "isAdmin": false,
+            "courses": []
         }
     ]
 }

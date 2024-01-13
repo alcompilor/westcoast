@@ -19,6 +19,8 @@ const render = async (): Promise<void> => {
     const courseObj: Course = await CourseAPI.reqCourse(courseID);
     const userObj: User = await UserAPI.reqUser(userId);
 
+    UserAPI.patchCourseUser(userObj, courseObj);
+
     const eConfirm: HTMLDivElement = EnrollConfirm.buildComponent(
         courseObj,
         userObj
