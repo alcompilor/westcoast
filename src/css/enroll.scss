@@ -1,0 +1,52 @@
+@import "./global";
+
+.econfirm-container {
+    display: flex;
+    align-items: center;
+
+    @include small-screen {
+        flex-direction: column;
+    }
+
+    @include medium-screen {
+        gap: 1rem;
+    }
+
+    @include large-screen {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .econfirm-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .econfirm-title {
+            color: $calmBlue;
+            font-weight: 800;
+
+            @include large-screen {
+                font-size: $l;
+            }
+
+            @include small-screen {
+                font-size: $m;
+                text-align: center;
+            }
+        }
+
+        .econfirm-subtitle {
+            color: $growthGreen;
+
+            @include large-screen {
+                font-size: $m;
+            }
+
+            @include small-screen {
+                font-size: $s;
+                text-align: center;
+            }
+        }
+    }
+}
