@@ -47,7 +47,7 @@ const mount = (): void => {
         if (listOfCourses.length > 0) {
             title = "Search Results:";
         } else {
-            title = "No Results Found :(";
+            title = "No courses found 👀";
         }
         const catalogSection: HTMLDivElement = CourseCatalog.buildComponent(
             listOfCourses,
