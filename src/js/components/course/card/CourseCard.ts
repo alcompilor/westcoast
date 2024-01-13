@@ -1,6 +1,9 @@
 import Course from "../../../interfaces/course";
 
-const buildComponent = (data: Course): HTMLDivElement => {
+const buildComponent = (
+    data: Course,
+    showEnrollBtns: boolean = true
+): HTMLDivElement => {
     const cardContainer: HTMLDivElement = document.createElement("div");
     cardContainer.className = "card";
     cardContainer.dataset.id = data.id.toString();
@@ -76,12 +79,14 @@ const buildComponent = (data: Course): HTMLDivElement => {
         cardTags.appendChild(cardCode);
     }
 
-    if (data.availability.classroom && data.availability.online) {
-        cardBtnContainer.append(cardOnlineBtn, cardOnSiteBtn);
-    } else if (data.availability.online) {
-        cardBtnContainer.append(cardOnlineBtn);
-    } else {
-        cardBtnContainer.append(cardOnSiteBtn);
+    if (showEnrollBtns) {
+        if (data.availability.classroom && data.availability.online) {
+            cardBtnContainer.append(cardOnlineBtn, cardOnSiteBtn);
+        } else if (data.availability.online) {
+            cardBtnContainer.append(cardOnlineBtn);
+        } else {
+            cardBtnContainer.append(cardOnSiteBtn);
+        }
     }
 
     cardExtra.appendChild(cardExtraParagraph);
