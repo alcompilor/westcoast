@@ -1,3 +1,5 @@
+import Course from "./course";
+
 interface User {
     id: string;
     fullName: string;
@@ -6,6 +8,7 @@ interface User {
     address: string;
     phone: string;
     isAdmin: boolean;
+    courses: Number[];
 }
 
 export default User;
