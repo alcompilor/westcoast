@@ -1,0 +1,170 @@
+@import "./global";
+
+.card-before {
+    display: none !important;
+}
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .account-status {
+        display: none;
+        font-size: $s;
+        background-color: $secondaryGray;
+        padding: 0.4rem;
+        width: max-content;
+        font-weight: 700;
+        border-radius: 8px;
+        color: #fff;
+
+        @include small-screen {
+            align-self: center;
+        }
+    }
+
+    .forms-container {
+        min-height: 65vh;
+
+        @include medium-to-large-screen {
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            column-gap: 3rem;
+        }
+
+        @include small-screen {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .login-container,
+        .reg-container {
+            display: flex;
+            flex-direction: column;
+            transition-duration: 0.3s;
+            padding: 2rem;
+            gap: 2rem;
+            border-radius: 25px;
+            box-shadow: 3px 3px 0px 0px $calmBlue;
+            border: 2px solid $calmBlue;
+
+            .login-title,
+            .reg-title {
+                font-size: calc($m + 0.4rem);
+                color: $calmBlue;
+            }
+
+            .login-form,
+            .reg-form {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                > input {
+                    border: 1px solid $calmBlue;
+                    padding: 0.5rem 1rem;
+                    border-radius: 8px;
+                    font-size: $s;
+                    font-weight: 500;
+                    color: $calmBlue;
+                    background-color: #9ef4f4e3;
+
+                    &:focus {
+                        border: 1px solid $calmBlue;
+                        outline: 2px solid $accentDetail;
+                    }
+
+                    &::placeholder {
+                        color: #173149a9;
+                    }
+                }
+            }
+
+            > button {
+                cursor: pointer;
+                padding: 0.5rem 1rem;
+                border-radius: 10px;
+                font-size: $s;
+                font-weight: 800;
+                background-color: $accentDetail;
+                color: $calmBlue;
+                border: 1px solid $calmBlue;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+        .login-container {
+            align-items: stretch;
+
+            @include medium-to-large-screen {
+                background: url(/assets/img/login.svg) #ffffff no-repeat;
+                background-size: 63%;
+                background-position-x: 50%;
+                background-position-y: 100%;
+            }
+
+            @include small-screen {
+                background: #fff;
+            }
+        }
+
+        .reg-container {
+            @include medium-to-large-screen {
+                background: url(/assets/img/register.svg) #14d9d91c no-repeat;
+                background-size: 62%;
+                background-position-x: 95%;
+                background-position-y: 90%;
+                align-items: start;
+            }
+
+            @include small-screen {
+                background: #14d9d91c no-repeat;
+                align-items: stretch;
+            }
+        }
+    }
+
+    .account-empty-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include medium-to-large-screen {
+            gap: 3rem;
+        }
+
+        @include small-screen {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .account-empty-title {
+            color: $calmBlue;
+            font-weight: 700;
+            max-width: 29ch;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: #0e999930;
+
+            @include small-screen {
+                font-size: $s;
+                text-decoration-thickness: 4px;
+            }
+
+            @include medium-screen {
+                font-size: $m;
+            }
+
+            @include large-screen {
+                font-size: calc($m + 0.4rem);
+            }
+
+            @include medium-to-large-screen {
+                text-decoration-thickness: 6px;
+            }
+        }
+    }
+}

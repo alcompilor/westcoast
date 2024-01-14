@@ -1,10 +1,10 @@
 interface Course {
-    id: Number;
+    id?: string;
     courseTitle: string;
     courseCode: string;
     desc: string;
     details: string;
-    durationInDays: Number;
+    durationInDays: number;
     availability: {
         classroom: boolean;
         online: boolean;
@@ -20,7 +20,7 @@ interface Course {
         online: boolean;
     };
     featured: boolean;
-    [key: string]: string | object | boolean;
+    [key: string]: string | object | boolean | number | undefined;
 }
 
 export default Course;
