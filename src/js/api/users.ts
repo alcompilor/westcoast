@@ -4,16 +4,27 @@ import Course from "../interfaces/course";
 const reqUser = async (id: number): Promise<User> => {
     const res = await fetch(`http://localhost:3000/users/${id}`);
     if (!res.ok) {
-        console.error("Catalog failed to fetch courses!", 400);
+        console.error("Catalog failed to fetch user!", 400);
     }
     const data: User = await res.json();
     return data;
 };
 
+const reqUserByEmail = async (email: string): Promise<User> => {
+    const res = await fetch(`http://localhost:3000/users?email=${email}`);
+    if (!res.ok) {
+        console.error("Catalog failed to fetch user!", 400);
+    }
+    const data: User[] = await res.json();
+    return data[0];
+};
+
 const patchCourseUser = async (user: User, course: Course): Promise<void> => {
-    const updatedCourses: Number[] = user.courses.includes(Number(course.id))
+    const updatedCourses: number[] = user.courses.includes(
+        parseInt(course.id as string)
+    )
         ? user.courses
-        : [...user.courses, Number(course.id)];
+        : [...user.courses, parseInt(course.id as string)];
 
     const res = await fetch(`http://localhost:3000/users/${user.id}`, {
         method: "PATCH",
@@ -24,8 +35,18 @@ const patchCourseUser = async (user: User, course: Course): Promise<void> => {
     });
 
     if (!res.ok) {
-        console.error("Enrolling user failed", 400);
+        console.error("Enrolling user to course failed", 400);
     }
 };
 
-export { reqUser, patchCourseUser };
+const postUser = async (user: User): Promise<void> => {
+    const res = await fetch("http://localhost:3000/users", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+    });
+};
+
+export { reqUser, reqUserByEmail, patchCourseUser, postUser };
