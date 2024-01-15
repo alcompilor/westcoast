@@ -60,12 +60,12 @@ const buildDate = (): HTMLDivElement => {
     const dateField: HTMLInputElement = document.createElement("input");
     dateField.type = "date";
     dateField.className = "course-date-picker";
-    dateField.value = new Date().toISOString().split('T')[0];
+    dateField.value = new Date().toISOString().split("T")[0];
     dateField.required = true;
 
     container.append(label, dateField);
     return container;
-}
+};
 
 const buildComponent = (): HTMLDivElement => {
     const formContainer: HTMLDivElement = document.createElement("div");
@@ -120,7 +120,8 @@ const buildComponent = (): HTMLDivElement => {
 
     const cFeat: HTMLDivElement = buildFeatured();
 
-    const cDetailsField: HTMLTextAreaElement = document.createElement("textarea");
+    const cDetailsField: HTMLTextAreaElement =
+        document.createElement("textarea");
     cDetailsField.placeholder = "Course Details";
     cDetailsField.className = "course-details";
     cDetailsField.required = true;

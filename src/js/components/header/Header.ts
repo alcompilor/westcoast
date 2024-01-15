@@ -4,7 +4,9 @@ import * as UserAPI from "../../api/users";
 
 const buildComponent = async (): Promise<HTMLDivElement> => {
     const userId: number = parseInt(localStorage.getItem("wcUserId") as string);
-    const isAdmin: boolean = userId ? (await UserAPI.reqUser(userId)).isAdmin : false;
+    const isAdmin: boolean = userId
+        ? (await UserAPI.reqUser(userId)).isAdmin
+        : false;
 
     const headerContainer: HTMLDivElement = document.createElement("div");
     headerContainer.className = "header";
@@ -28,7 +30,7 @@ const buildComponent = async (): Promise<HTMLDivElement> => {
         li.appendChild(a);
         ul.appendChild(li);
     });
-    
+
     if (userId && isAdmin) {
         const li: HTMLLIElement = document.createElement("li");
         const a: HTMLAnchorElement = document.createElement("a");
