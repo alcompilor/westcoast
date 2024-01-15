@@ -19,6 +19,15 @@ const reqUserByEmail = async (email: string): Promise<User> => {
     return data[0];
 };
 
+const reqUsers = async (): Promise<User[]> => {
+    const res = await fetch(`http://localhost:3000/users`);
+    if (!res.ok) {
+        console.error("Catalog failed to fetch user!", 400);
+    }
+    const data: User[] = await res.json();
+    return data;
+};
+
 const patchCourseUser = async (user: User, course: Course): Promise<void> => {
     const updatedCourses: number[] = user.courses.includes(
         parseInt(course.id as string)
@@ -49,4 +58,4 @@ const postUser = async (user: User): Promise<void> => {
     });
 };
 
-export { reqUser, reqUserByEmail, patchCourseUser, postUser };
+export { reqUser, reqUserByEmail, reqUsers, patchCourseUser, postUser };

@@ -18,4 +18,14 @@ const reqCourse = async (id: number): Promise<Course> => {
     return data;
 };
 
-export { reqCourses, reqCourse };
+const postCourse = async (course: Course): Promise<void> => {
+    const res = await fetch("http://localhost:3000/courses", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(course),
+    });
+};
+
+export { reqCourses, reqCourse, postCourse };

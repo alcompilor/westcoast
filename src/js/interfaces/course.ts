@@ -20,6 +20,7 @@ interface Course {
         online: boolean;
     };
     featured: boolean;
+    price: number;
     [key: string]: string | object | boolean | number | undefined;
 }
 
