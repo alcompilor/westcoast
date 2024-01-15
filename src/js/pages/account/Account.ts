@@ -1,7 +1,7 @@
-import * as LoginForm from "../../components/login/Login";
-import * as LoginEvents from "../../components/login/events";
-import * as RegForm from "../../components/register/Register";
-import * as RegEvents from "../../components/register/events";
+import * as LoginForm from "../../components/forms/login/Login";
+import * as LoginEvents from "../../components/forms/login/events";
+import * as RegForm from "../../components/forms/register/Register";
+import * as RegEvents from "../../components/forms/register/events";
 import * as CourseCatalog from "../../components/course/catalog/CourseCatalog";
 import * as UserAPI from "../../api/users";
 import * as CourseAPI from "../../api/courses";

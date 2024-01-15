@@ -1,5 +1,5 @@
-import User from "../../interfaces/user";
-import * as UserAPI from "../../api/users";
+import User from "../../../interfaces/user";
+import * as UserAPI from "../../../api/users";
 
 const mount = (): void => {
     const regEvent = ((): void => {
