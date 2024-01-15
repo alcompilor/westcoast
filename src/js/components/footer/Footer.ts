@@ -72,11 +72,8 @@ const buildComponent = (): HTMLDivElement => {
 };
 
 const render = (): void => {
-    document.addEventListener("DOMContentLoaded", () => {
-        document.body.appendChild(buildComponent());
-    });
-    //const root: HTMLDivElement = document.querySelector(".root")!;
-    //root.after(buildComponent());
+    const root: HTMLDivElement = document.querySelector(".root")!;
+    root.after(buildComponent());
 };
 
 render();
