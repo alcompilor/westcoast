@@ -20,7 +20,7 @@ const buildComponent = (): HTMLDivElement => {
         "/assets/icons/x.svg",
         "/assets/icons/lin.svg",
         "/assets/icons/tiktok.svg",
-        "/assets/icons/discord.svg"
+        "/assets/icons/discord.svg",
     ];
 
     socialIconsArray.forEach((src) => {
@@ -59,21 +59,22 @@ const buildComponent = (): HTMLDivElement => {
     credit.target = "_blank";
 
     const address: HTMLSpanElement = document.createElement("span");
-    address.textContent = "WestCoast Education Inc, 456 Oak Street, Suite 789, Metropolis, CA 90210, US";
+    address.textContent =
+        "WestCoast Education Inc, 456 Oak Street, Suite 789, Metropolis, CA 90210, US";
 
     copyright.appendChild(credit);
     bottomContainer.append(copyright, address);
 
     topContainer.append(logo, socialContainer, contactContainer);
     footerContainer.append(topContainer, bottomContainer);
-    
+
     return footerContainer;
 };
 
 const render = (): void => {
     document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(buildComponent());
-    })
+    });
     //const root: HTMLDivElement = document.querySelector(".root")!;
     //root.after(buildComponent());
 };
