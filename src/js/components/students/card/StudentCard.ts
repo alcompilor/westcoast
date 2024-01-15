@@ -34,7 +34,7 @@ const buildComponent = (
         const li: HTMLLIElement = document.createElement("li");
         li.className = "student-card-course";
         li.textContent = "Not enrolled in any course";
-            coursesUl.appendChild(li);
+        coursesUl.appendChild(li);
     }
 
     const studentInfoContainer: HTMLDivElement = document.createElement("div");
