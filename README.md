@@ -36,7 +36,7 @@ Before you get started with WestCoast, make sure you have the following prerequi
 5. Open your browser and go to http://localhost:8080 to access the WestCoast platform.
 
 ## ⚙️ Setup & Demo Accounts
-The WestCoast educational platform leverages the power of `json-server` with a pre-seeded database to provide a realistic development environment. For exploration purposes, two demo accounts have been pre-configured within the json database, allowing you to interact with various features of the platform:
+WestCoast uses `json-server` with a pre-seeded database to provide a realistic development environment. For exploration purposes, two demo accounts have been pre-configured within the json database, allowing you to interact with various features of the platform:
 
 #### Admin Account:
 - **Email:** `john@gmail.com`
