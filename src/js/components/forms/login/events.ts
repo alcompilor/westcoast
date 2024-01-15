@@ -25,7 +25,7 @@ const mount = (): void => {
                 );
 
                 if (user && user.password === password.value) {
-                    localStorage.setItem("wcUserId", user.id!);
+                    localStorage.setItem("wcUserId", String(user.id)!);
                     notice.textContent =
                         "Login successful, you will be redirected..";
                     notice.style.display = "block";

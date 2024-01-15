@@ -29,11 +29,9 @@ const reqUsers = async (): Promise<User[]> => {
 };
 
 const patchCourseUser = async (user: User, course: Course): Promise<void> => {
-    const updatedCourses: number[] = user.courses.includes(
-        parseInt(course.id as string)
-    )
+    const updatedCourses: number[] = user.courses.includes(course.id as number)
         ? user.courses
-        : [...user.courses, parseInt(course.id as string)];
+        : [...user.courses, course.id as number];
 
     const res = await fetch(`http://localhost:3000/users/${user.id}`, {
         method: "PATCH",

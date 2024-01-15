@@ -6,7 +6,7 @@ const buildComponent = (
 ): HTMLDetailsElement => {
     const detailsEl: HTMLDetailsElement = document.createElement("details");
     detailsEl.className = "student-card";
-    detailsEl.dataset.id = user.id;
+    detailsEl.dataset.id = String(user.id);
 
     const summaryEl: HTMLElement = document.createElement("summary");
     summaryEl.className = "student-card-title";

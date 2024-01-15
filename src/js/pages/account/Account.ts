@@ -12,7 +12,7 @@ const filterUserCourses = async (id: number): Promise<Course[]> => {
     const allCourses: Course[] = await CourseAPI.reqCourses();
 
     const enrolledCourses = allCourses.filter((course) =>
-        enrolledIDs.includes(parseInt(course.id as string))
+        enrolledIDs.includes(course.id as number)
     );
 
     return enrolledCourses;
