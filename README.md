@@ -46,7 +46,18 @@ WestCoast uses `json-server` with a pre-seeded database to provide a realistic d
 - **Email:** `jane@gmail.com`
 - **Password:** `assumeHashed`
 
-Feel free to use these demo accounts to navigate through different sections of the platform and experience its functionalities during development. Furthermore, feel free to examine the database structure in the [db.json](./db/db.json) file.
+Feel free to use these demo accounts to navigate through different sections of the platform and experience its functionalities during development. Furthermore, feel free to examine the database schema in the [db.json](./db/db.json) file.
+
+## 🧪 Unit Tests
+
+WestCoat uses Jest as its testing framework. To execute the existing tests, ensure that you have installed the required dependencies and then run the following command:
+
+```bash
+   npm test
+```
+
+#### Adding Tests
+If you wish to contribute or introduce new tests, locate the existing test files in the `tests` directory. Adhere to Jest's testing conventions and create your test files accordingly.
 
 ## ⚖️ License
 WestCoast is licensed under the [MIT License](LICENSE.md). Feel free to reach out if you have any questions or suggestions.
