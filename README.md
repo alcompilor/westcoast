@@ -13,6 +13,7 @@ WestCoast is a user-friendly educational platform designed to connect students w
 ## ⚠️ Requirements
 Before you get started with WestCoast, make sure you have the following prerequisites installed:
 
+- Node.js (v20.10.0 or newer)
 - npm (Node Package Manager)
 - Ports 8080 & 3000 must be available
 
