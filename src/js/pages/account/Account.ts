@@ -64,8 +64,6 @@ const buildPage = async (): Promise<HTMLDivElement> => {
         const [notice, formsContainer]: [HTMLSpanElement, HTMLDivElement] =
             compileFormsSection();
         accountContainer.append(notice, formsContainer);
-    } else if (userId && isUserAdmin) {
-        window.location.replace("/admin.html");
     } else {
         const userCourses: Course[] = await filterUserCourses(userId);
 
