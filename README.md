@@ -35,6 +35,19 @@ Before you get started with WestCoast, make sure you have the following prerequi
     ```
 5. Open your browser and go to http://localhost:8080 to access the WestCoast platform.
 
+## ⚙️ Setup & Demo Accounts
+The WestCoast educational platform leverages the power of `json-server` with a pre-seeded database to provide a realistic development environment. For exploration purposes, two demo accounts have been pre-configured within the json database, allowing you to interact with various features of the platform:
+
+#### Admin Account:
+- **Email:** `john@gmail.com`
+- **Password:** `assumeHashed`
+
+#### Regular User Account:
+- **Email:** `jane@gmail.com`
+- **Password:** `assumeHashed`
+
+Feel free to use these demo accounts to navigate through different sections of the platform and experience its functionalities during development. Furthermore, feel free to examine the database structure in the [db.json](./db/db.json) file.
+
 ## ⚖️ License
 WestCoast is licensed under the [MIT License](LICENSE.md). Feel free to reach out if you have any questions or suggestions.
 
