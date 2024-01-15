@@ -17,7 +17,7 @@ const buildComponent = (users: User[], courses: Course[]): HTMLDivElement => {
         const li: HTMLLIElement = document.createElement("li");
 
         const filteredCourses: Course[] = courses.filter((course) =>
-            user.courses.includes(parseInt(course.id as string))
+            user.courses.includes(course.id as number)
         );
 
         const parsedCourses: Array<[string, string]> = filteredCourses.flatMap(

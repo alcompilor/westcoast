@@ -6,7 +6,7 @@ const buildComponent = (
 ): HTMLDivElement => {
     const cardContainer: HTMLDivElement = document.createElement("div");
     cardContainer.className = "card";
-    cardContainer.dataset.id = data.id;
+    cardContainer.dataset.id = String(data.id);
 
     const cardBefore: HTMLDivElement = document.createElement("div");
     cardBefore.className = "card-before";
