@@ -2,7 +2,7 @@ import * as CourseAPI from "../../src/js/api/courses";
 
 test("Test to fetch one course by its ID", async () => {
     expect(await CourseAPI.reqCourse(1)).toEqual({
-        id: "1",
+        id: 1,
         courseTitle: "Introduction to Programming",
         courseCode: "CS101",
         desc: "Build a solid foundation in programming and coding basics.",
@@ -27,7 +27,7 @@ test("Test to fetch one course by its ID", async () => {
     });
 
     expect(await CourseAPI.reqCourse(4)).toEqual({
-        id: "4",
+        id: 4,
         courseTitle: "Mobile App Development",
         courseCode: "MAD400",
         desc: "Learn the essentials of mobile app development for various platforms.",
@@ -55,7 +55,7 @@ test("Test to fetch one course by its ID", async () => {
 test("Test to fetch all courses", async () => {
     expect(await CourseAPI.reqCourses()).toEqual([
         {
-            id: "1",
+            id: 1,
             courseTitle: "Introduction to Programming",
             courseCode: "CS101",
             desc: "Build a solid foundation in programming and coding basics.",
@@ -79,7 +79,7 @@ test("Test to fetch all courses", async () => {
             price: 200,
         },
         {
-            id: "2",
+            id: 2,
             courseTitle: "Web Development Basics",
             courseCode: "WD200",
             desc: "Explore essential concepts and fundamentals of web development.",
@@ -103,7 +103,7 @@ test("Test to fetch all courses", async () => {
             price: 250,
         },
         {
-            id: "3",
+            id: 3,
             courseTitle: "Data Science Fundamentals",
             courseCode: "DS300",
             desc: "Gain a comprehensive understanding of the fundamentals of data science.",
@@ -127,7 +127,7 @@ test("Test to fetch all courses", async () => {
             price: 300,
         },
         {
-            id: "4",
+            id: 4,
             courseTitle: "Mobile App Development",
             courseCode: "MAD400",
             desc: "Learn the essentials of mobile app development for various platforms.",
@@ -151,7 +151,7 @@ test("Test to fetch all courses", async () => {
             price: 270,
         },
         {
-            id: "5",
+            id: 5,
             courseTitle: "Cybersecurity Essentials",
             courseCode: "CE101",
             desc: "Acquire essential knowledge and skills in the field of cybersecurity.",
@@ -175,7 +175,7 @@ test("Test to fetch all courses", async () => {
             price: 220,
         },
         {
-            id: "6",
+            id: 6,
             courseTitle: "Artificial Intelligence Overview",
             courseCode: "AI200",
             desc: "Get an insightful overview of key concepts in artificial intelligence.",
@@ -199,7 +199,7 @@ test("Test to fetch all courses", async () => {
             price: 320,
         },
         {
-            id: "7",
+            id: 7,
             courseTitle: "Database Management Systems",
             courseCode: "DBMS300",
             desc: "Explore the principles and practices of database management systems.",
@@ -223,7 +223,7 @@ test("Test to fetch all courses", async () => {
             price: 280,
         },
         {
-            id: "8",
+            id: 8,
             courseTitle: "Frontend Web Development",
             courseCode: "FWD400",
             desc: "Explore the essentials of frontend web development and design.",
@@ -247,7 +247,7 @@ test("Test to fetch all courses", async () => {
             price: 240,
         },
         {
-            id: "9",
+            id: 9,
             courseTitle: "Cloud Computing Basics",
             courseCode: "CCB200",
             desc: "Get introduced to the fundamental concepts of cloud computing.",
@@ -271,7 +271,7 @@ test("Test to fetch all courses", async () => {
             price: 290,
         },
         {
-            id: "10",
+            id: 10,
             courseTitle: "DevOps Practices",
             courseCode: "DOP300",
             desc: "Learn essential practices for effective DevOps implementation.",
@@ -295,7 +295,7 @@ test("Test to fetch all courses", async () => {
             price: 260,
         },
         {
-            id: "11",
+            id: 11,
             courseTitle: "Advanced Machine Learning",
             courseCode: "AML450",
             desc: "Deep dive into advanced machine learning techniques and algorithms.",
@@ -319,7 +319,7 @@ test("Test to fetch all courses", async () => {
             price: 350,
         },
         {
-            id: "12",
+            id: 12,
             courseTitle: "Backend Web Development",
             courseCode: "BWD600",
             desc: "Explore advanced concepts and techniques in backend development.",

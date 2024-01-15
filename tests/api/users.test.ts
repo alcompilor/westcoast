@@ -2,7 +2,7 @@ import * as UserAPI from "../../src/js/api/users";
 
 test("Test to fetch one user by its ID", async () => {
     expect(await UserAPI.reqUser(1)).toEqual({
-        id: "1",
+        id: 1,
         fullName: "Jane Doe",
         email: "jane@gmail.com",
         password: "assumeHashed",
@@ -15,7 +15,7 @@ test("Test to fetch one user by its ID", async () => {
 
 test("Test to fetch one user by its email", async () => {
     expect(await UserAPI.reqUserByEmail("john@gmail.com")).toEqual({
-        id: "2",
+        id: 2,
         fullName: "John Doe",
         email: "john@gmail.com",
         password: "assumeHashed",
@@ -29,7 +29,7 @@ test("Test to fetch one user by its email", async () => {
 test("Test to fetch all courses", async () => {
     expect(await UserAPI.reqUsers()).toEqual([
         {
-            id: "1",
+            id: 1,
             fullName: "Jane Doe",
             email: "jane@gmail.com",
             password: "assumeHashed",
@@ -39,7 +39,7 @@ test("Test to fetch all courses", async () => {
             courses: [6, 10],
         },
         {
-            id: "2",
+            id: 2,
             fullName: "John Doe",
             email: "john@gmail.com",
             password: "assumeHashed",
