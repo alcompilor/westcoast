@@ -78,7 +78,7 @@
             }
 
             > span {
-                font-weight: 700;
+                font-weight: 500;
 
                 @include medium-to-large-screen {
                     font-size: calc($s + 0.2rem);
@@ -92,7 +92,7 @@
                     content: "•";
                     margin-right: 6px;
                     vertical-align: middle;
-                    color: $accentDetail;
+                    color: #a9ffff69;
 
                     @include medium-to-large-screen {
                         font-size: calc($m + 0.2rem);
