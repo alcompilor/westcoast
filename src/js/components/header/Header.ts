@@ -1,7 +1,11 @@
 import { pages } from "./pages";
 import * as HeaderEvents from "./events";
+import * as UserAPI from "../../api/users";
 
-const buildComponent = (): HTMLDivElement => {
+const buildComponent = async (): Promise<HTMLDivElement> => {
+    const userId: number = parseInt(localStorage.getItem("wcUserId") as string);
+    const isAdmin: boolean = userId ? (await UserAPI.reqUser(userId)).isAdmin : false;
+
     const headerContainer: HTMLDivElement = document.createElement("div");
     headerContainer.className = "header";
 
@@ -24,8 +28,19 @@ const buildComponent = (): HTMLDivElement => {
         li.appendChild(a);
         ul.appendChild(li);
     });
+    
+    if (userId && isAdmin) {
+        const li: HTMLLIElement = document.createElement("li");
+        const a: HTMLAnchorElement = document.createElement("a");
 
-    if (localStorage.getItem("wcUserId")) {
+        a.href = "/admin.html";
+        a.textContent = "Admin Panel";
+
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+
+    if (userId) {
         const li: HTMLLIElement = document.createElement("li");
         const a: HTMLAnchorElement = document.createElement("a");
 
@@ -58,9 +73,10 @@ const buildComponent = (): HTMLDivElement => {
     return headerContainer;
 };
 
-const render = (): void => {
-    document.body.prepend(buildComponent());
-    document.addEventListener("DOMContentLoaded", HeaderEvents.mount);
+const render = async (): Promise<void> => {
+    document.body.prepend(await buildComponent());
 };
 
-render();
+render().finally(() => {
+    HeaderEvents.mount();
+});
