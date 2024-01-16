@@ -2,7 +2,7 @@
 
 Welcome to WestCoast, your go-to educational platform where students can explore and purchase courses, choosing between online and classroom options. This README provides essential information to help you set up and use WestCoast.
 
-![Overview of WestCoast Education Platform](https://i.imgur.com/5ucM5Kb.png){width=550px}
+<img src="https://i.imgur.com/5ucM5Kb.png" alt="Overview of WestCoast Education Platform" width="550px">
 
 ## 👋 Introduction
 WestCoast is a user-friendly educational platform designed to connect students with a diverse range of courses. Whether you prefer the flexibility of online learning or the traditional classroom experience, WestCoast has you covered. Explore our courses, make your selections, and embark on a journey of knowledge and skill-building.
